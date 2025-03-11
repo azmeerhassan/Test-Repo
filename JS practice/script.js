@@ -1,18 +1,21 @@
-function greeting ()
-{
-    console.log("AOA");
-}
-console.log('Before');
-setTimeout(greeting, 3000);
-console.log('After');
+let student = {
+    rollNo: 6,
+    name: 'Azmeer Hassan',
+    department:'CSE'
+};
 
-console.log('Before');
-setTimeout(function() {
-    console.log('Anonymous')
-}, 5000)
-console.log('After');
+// console.log(student);
+// console.log(student.rollNo);
+// console.log(student.name);
+// console.log(student.department);
+// console.log(student['rollNo']);
+// console.log(student['name']);
+// console.log(student['department']);
 
-const multiply = function(a, b){
-    return a*b;
-}
-console.log(multiply(3, 5));
+// console.log(typeof student)
+// console.log(typeof student.name)
+
+student.year = 'second';
+// console.log(student);
+delete student.name;
+console.log(student);
