@@ -1,18 +1,9 @@
-let student = {
-    rollNo: 6,
-    name: 'Azmeer Hassan',
-    department:'CSE'
-};
-
-let num1 = 10;
-let num2 = num1;
-
-let student2 = student;
-
-console.log(num2);
-console.log(student2);
-
- num1 = 15;
-delete student.name;
-console.log(num2);
-console.log(student2);
+let array = [6, 'CSE', 'BE', 'Second', {gpa: 3.3}];
+console.log(array);
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+console.log(array[3]);
+console.log(array[4]);
+console.log(array[4].gpa);
+console.log(array[5]);
