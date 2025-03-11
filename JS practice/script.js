@@ -4,18 +4,15 @@ let student = {
     department:'CSE'
 };
 
-// console.log(student);
-// console.log(student.rollNo);
-// console.log(student.name);
-// console.log(student.department);
-// console.log(student['rollNo']);
-// console.log(student['name']);
-// console.log(student['department']);
+let num1 = 10;
+let num2 = num1;
 
-// console.log(typeof student)
-// console.log(typeof student.name)
+let student2 = student;
 
-student.year = 'second';
-// console.log(student);
+console.log(num2);
+console.log(student2);
+
+ num1 = 15;
 delete student.name;
-console.log(student);
+console.log(num2);
+console.log(student2);
