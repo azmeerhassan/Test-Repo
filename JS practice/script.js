@@ -1,11 +1,18 @@
-function greeting (name)
+function greeting ()
 {
-    console.log("AOA, "+name);
+    console.log("AOA");
 }
+console.log('Before');
+setTimeout(greeting, 3000);
+console.log('After');
 
-function processUserInput(callback)
-{
-    var name = prompt("Please enter your name.");
-    callback(name);
+console.log('Before');
+setTimeout(function() {
+    console.log('Anonymous')
+}, 5000)
+console.log('After');
+
+const multiply = function(a, b){
+    return a*b;
 }
-processUserInput(greeting);
+console.log(multiply(3, 5));
