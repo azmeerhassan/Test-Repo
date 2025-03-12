@@ -1,13 +1,11 @@
-// fetch('https://google.com')
-// .then(res => res.text())
-// .then(data => console.log(data));
-async function fetchData()
+function abcd(a=0, b=0, c=0)
 {
-    let res = await fetch('https://google.com');
-    let data =  await res.text();
-    console.log(data);   
+    console.log(a, b, c);
 }
-fetchData('https://google.com');
+
+console.log(abcd(1, 3, 5));
+console.log(abcd(1, 8, 4));
+console.log(abcd(1));
 
 
 
