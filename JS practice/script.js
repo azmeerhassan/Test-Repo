@@ -1,11 +1,8 @@
-function abcd(a=0, b=0, c=0)
+function abcd(a, b, c, ...d)
 {
-    console.log(a, b, c);
+    console.log(a, b, c, d);
 }
-
-console.log(abcd(1, 3, 5));
-console.log(abcd(1, 8, 4));
-console.log(abcd(1));
+console.log(abcd(1,2,3,4,5,6,7));
 
 
 
