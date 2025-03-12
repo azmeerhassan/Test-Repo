@@ -1,17 +1,67 @@
-// var a = [1, 4, 8];
-// var [b,c,d] = a;
-// console.log(b);
-// console.log(c);
-// console.log(d);
+// var ans = new Promise((res, rej)=>{
+//     if(false)
+//     {
+//         return res();
+//     }
+//     else
+//     {
+//         return rej();
+//     }
+// });
+// ans
+// .then(()=>{
+//     console.log("Resolved");
+// })
+// .catch(()=>{
+//     console.log("Rejected");
+// })
 
-// var obj = {name:"azmeer", age:20};
-// var {age} = obj;
-// console.log(age); 
+//User will ask for a number b/w 0 se 9 and if the number is 
+//greater than 5 , so reolve it , otherwise reject.
+// var ans = new Promise((res, rej)=>{
+//     var n = Math.floor(Math.random()*10);
+//     if(n>5)
+//     {
+//         return res();
+//     }
+//     else
+//     {
+//         return rej();
+//     }
 
-var a = [1, 4, 8];
-var [b,,d] = a;
-console.log(b);
-console.log(d);
+// });
+// ans.then(()=>{
+//     console.log("ABOVE");
+// })
+// .catch(()=>{
+//     console.log("BELOW");
+// })
+//ghar jao
+//lock lagao
+//khana khao
+
+var p1 = new Promise((res, rej)=>{
+    return res("ghar jao");
+});
+
+var p2 = p1.then((data)=>{
+    console.log(data);
+    return new Promise((res, rej)=>{
+        return res("lock lagao");
+    })
+});
+
+var p3 = p2.then((data)=>{
+    console.log(data);
+    return new Promise((res, rej)=>{
+        return res("khana khao");
+    })
+});
+p3.then((data)=>{
+    console.log(data);
+});
+
+
 
 
 
