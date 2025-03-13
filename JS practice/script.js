@@ -1,15 +1,4 @@
-let stocks = 
+function greeting (name)
 {
-    Fruits:["strawberry", "grapes", "banana", "apple"],
-    liquid:["water", "ice"],
-    holder:["cone", "cup", "stick"],
-    toppings:["chocolate", "peanuts"],
-};
-
-
-
-
-
-
-
-
+    console.log("AOA, "+name);
+}
