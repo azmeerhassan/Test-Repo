@@ -7,7 +7,7 @@ async function fetchData()
     let data =  await res.text();
     console.log(data);   
 }
-fetchData('https://google.com');
+fetchData();
 
 
 
