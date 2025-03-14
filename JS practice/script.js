@@ -5,6 +5,10 @@ let stocks =
      holder:["cone", "cup", "stick"], 
      toppings:["chocolate", "peanuts"], 
     };
+
+    //CALLBACK
+
+
 // let order = (fruitName, call_production)=>{
 //     setTimeout(()=>{
 //         console.log(`${stocks.Fruits[fruitName]} was selected`);
@@ -51,6 +55,10 @@ let stocks =
 // order(0, production);
 
 let is_shop_open = true;
+
+//PROMISES
+
+
 
 // let order = (time, work)=>{
 //     return new Promise((resolve, reject)=>{
@@ -106,6 +114,8 @@ let is_shop_open = true;
 // .finally(()=>{
 //     console.log("end of day")
 // })
+
+//ASYNC/AWAIT
 
 // function toppings_choice(){
 //     return new Promise((resolve, reject)=>{
