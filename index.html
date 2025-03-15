@@ -7,17 +7,18 @@
 </head>
 <body>
     <!-- HTML -->
-    <div  id="menu">
-        <li>home</li>
-        <li>about</li>
-        <li>search</li>
-        <li style="display: none;">project</li>
-    </div>
+    <input type="text" id="user" placeholder="value" >
+    
 
     <!-- JS -->
     <script>
-        let menu = document.querySelector("#menu");
-        menu.removeChild(menu.firstElementChild)
+        let iBox = document.querySelector("#user");
+        iBox.removeAttribute("placeholder")
+        console.log(iBox);
+        
+        // console.log(iBox.hasAttribute("id"));
+        
+        
         
         
 
