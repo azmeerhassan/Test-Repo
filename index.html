@@ -12,14 +12,16 @@
 <body>
     <!-- HTML -->
     <div id="container">
-        <button id = "btn"type="button" onclick="console.log(this.id);
-        ">Click Me (Google)</button>
+        <button id="btn">Click Me (Google)</button>
     </div>
     
 
     <!-- JS -->
     <script>
-       
+        let btn = document.getElementById("btn")
+       btn.addEventListener('click', (event)=>{
+        console.log(event)
+       })
         
     </script>
 </body>
