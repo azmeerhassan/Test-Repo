@@ -7,15 +7,21 @@
 </head>
 <body>
     <!-- HTML -->
-    
+    <div  id="menu">
+        <li>home</li>
+        <li>about</li>
+        <li>search</li>
+        <li>project</li>
+    </div>
 
     <!-- JS -->
     <script>
-        let div = document.createElement("div");
-        div.innerHTML = "welcome"
+        let menu = document.querySelector("#menu");
+        let list = document.createElement("li");
+        list.innerHTML="contact";
 
-        div.className = "wel"
-        console.log(div);
+        menu.appendChild(list);
+        console.log(menu.textContent)
         
         
 
