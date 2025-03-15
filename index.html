@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input{
+            background-color: gold; 
+            font-size: 50px;
+        }
+        
+    </style>
 </head>
 <body>
     <!-- HTML -->
-    <input type="text" id="user" placeholder="value" style="background-color: gold; font-size: 50px;" >
+    <input type="text" id="user" placeholder="value" >
     
 
     <!-- JS -->
     <script>
         let iBox = document.querySelector("#user");
-        // console.log(iBox.style);
-        console.log(iBox.style.backgroundColor);
-        iBox.style.padding = "100px";
-        console.log(iBox.style);
-        iBox.style.cssText += "width: 100px";
+        // console.log(window.getComputedStyle(iBox));
+        console.log(window.getComputedStyle(iBox).backgroundColor);
+        
         
         
         
