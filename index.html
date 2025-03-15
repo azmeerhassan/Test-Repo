@@ -11,25 +11,15 @@
 </head>
 <body>
     <!-- HTML -->
-    <h1 id="text" class="main message"></h1>
+    <div id="container">
+        <button id = "btn"type="button" onclick="console.log(this.id);
+        ">Click Me (Google)</button>
+    </div>
     
 
     <!-- JS -->
     <script>
-        let heading = document.querySelector("#text");
-
-        // heading.className +=" new";
-        // console.log(heading.className);
-        heading.classList.add("new", "new2");
-        // heading.classList.remove("new2");
-        heading.classList.replace("new2", "new2.0")
-        
-
-        
-        // console.log(heading.classList.contains("new2.0"));
-
-        heading.classList.toggle("new2.0.0")
-        console.log(heading.className);
+       
         
     </script>
 </body>
