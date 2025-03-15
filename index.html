@@ -7,16 +7,19 @@
 </head>
 <body>
     <!-- HTML -->
-    <input type="text" id="user" placeholder="value" >
+    <input type="text" id="user" placeholder="value" style="background-color: gold; font-size: 50px;" >
     
 
     <!-- JS -->
     <script>
         let iBox = document.querySelector("#user");
-        iBox.removeAttribute("placeholder")
-        console.log(iBox);
+        // console.log(iBox.style);
+        console.log(iBox.style.backgroundColor);
+        iBox.style.padding = "100px";
+        console.log(iBox.style);
+        iBox.style.cssText += "width: 100px";
         
-        // console.log(iBox.hasAttribute("id"));
+        
         
         
         
