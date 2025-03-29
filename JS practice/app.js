@@ -1,8 +1,4 @@
-var http = require('http')
+let calc = require('./calc.js')
 
-http.createServer((req, res)=>
-{
-    res.writeHead(200, {'Content-Type':'text/html'})
-    res.end("Hello World!")
-    
-}).listen(8080)
+let result = calc.add(5, 2)
+console.log("OUTPUT: "+result);
