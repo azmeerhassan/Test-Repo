@@ -1,4 +1,11 @@
-let calc = require('./calc.js')
+const { log } = require('console');
+let fs = require('fs');
 
-let result = calc.add(5, 2)
-console.log("OUTPUT: "+result);
+fs.readFile('calc.js', 'utf8', (err, data)=>{
+    if(err)
+        console.log(err);
+        
+    else
+    console.log(data);
+    
+})
