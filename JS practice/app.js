@@ -1,7 +1,7 @@
 const { log } = require('console');
 let fs = require('fs');
 
-fs.writeFile('calc1.js', 'console.log("writeFile")', (err, data)=>{
+fs.appendFile('calc.js', 'console.log("add done")', (err, data)=>{
     if(err)
         console.log(err);
         
