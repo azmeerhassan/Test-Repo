@@ -1,6 +1,13 @@
-let fs = require('fs');
+const express = require('express')
 
-fs.unlink('calc1.js', (data)=>{
-    console.log("deleted");
+const app = express()
+
+app.get('/', (req, res)=>{
+    res.send('Hello World');
+    
+})
+
+app.listen(9000, ()=>{
+    console.log('running');
     
 })
